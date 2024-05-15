@@ -1,0 +1,19 @@
+main {
+    background-color: #610C3F;
+    height: 100vh;
+    display: flex;
+}
+
+.clouds-main-top {
+    position: relative;
+    transform: rotate(180deg);
+    opacity: 0.5;
+    z-index: 1;
+}
+
+.logo-main {
+    position: relative;
+    z-index: 2;
+    top: 5rem;
+    height: 30vh;
+}
