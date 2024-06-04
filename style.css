@@ -18,59 +18,49 @@
 }
 */
 
-
 body {
     margin: 0;
+    font-family: "Oswald", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    color: #F5D0DE;
 }
 
 header {
-    position: relative;
-    height: 100px;
+    height: 8vh;
     background-color: #DE73A5;
-    background-image: url(media/nubes.svg);
+    padding: 10px;
+    position: relative;
+    width: 100%;
 }
 
-.logo-header {
-    z-index: 1;
-    height: 100px;
-    padding: 20px;
-}
-
-.clouds-header {
-    z-index: 0;
-    height: 100px;
+#logo-header {
+    height: 100%;
 }
 
 main {
-    background: url(media/nubes.svg) repeat-x;
-    height: 100vh;
-    position: relative;
+    background-color: #610C3F;
 }
 
-main::before {
-    content: "";
+hr {
+    border: 1px solid #F5D0DE;
+}
+
+#fecha {
+    font-family: "Jockey One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: #F5D0DE;
+}
+
+#iconos * {
+    color: black;
+}
+
+footer {
+    height: 300px;
+    background-color: #DE73A5;
     position: absolute;
-    width: 100vw;
-    height: 100vh;
-    z-index: 1;
-    background: #610C3F url(media/nubes.svg) repeat-x;
-    background-position: bottom;
-    transform: rotate(180deg);
-}
-
-.clouds-main-top {
-    position: relative;
-    top: 0;
-    height: 10rem;
-    transform: rotate(180deg);
-    opacity: 0.5;
-    background-repeat: repeat-x;
-}
-
-.logo-main {
-    position: absolute;
-    z-index: 1;
-    height: 30vh;
-    left: 50%;
-    transform: translate(-50%);
+    bottom: 0;
+    width: 100%;
 }
