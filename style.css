@@ -10,13 +10,13 @@
 .oswald {
     font-family: "Oswald", sans-serif;
     font-optical-sizing: auto;
-    font-weight: 400;
+    font-weight: 200;
     font-style: normal;
 }
 
 .jockey {
     font-family: "Jockey One", sans-serif;
-    font-weight: 400;
+    font-weight: 100;
     font-style: normal;
 }
 
@@ -30,6 +30,7 @@
 
 * {
     margin: 0;
+    font: inherit;
 }
 
 /* COLORES */
@@ -59,10 +60,13 @@ body {
     background-color: #610C3F;
     position: relative;
     min-height: 100vh;
+    overflow-x: hidden;
+    word-wrap: break-word;
 }
 
 a {
     color: inherit;
+    text-decoration: none;
 }
 
 ul {
@@ -74,29 +78,24 @@ ul {
 /* HEADER */
 
 header {
-    height: 8vh;
+    height: 6.5rem;
     background-color: #DE73A5;
     padding: 1em 0 1em 0;
-    position: relative;
+    position: sticky;
+    top: 0;
     width: 100%;
     display: flex;
     align-items: center;
 }
 
 #logo-header {
-    height: 2.5em;
+    height: 4.5rem;
     position: relative;
-    left: 5rem;
+    left: 10px;
     margin: 0;
 }
 
 /* MAIN */
-
-main {
-    padding-top: 1em;
-    padding-bottom: 1em;
-    max-height: 84vh;
-}
 
 main * {
     color: #F5D0DE;
@@ -108,12 +107,25 @@ main * {
     align-items: center;
     text-align: center;
     height: fit-content;
+    font-size: 2rem;
+    margin: 2rem 0 2rem 0;
 }
 
 #logo-main {
-    margin: 1em 1px 1em;
     height: auto;
-    width: 25em;
+    width: 40rem;
+}
+
+h1 {
+    margin: .2em;
+    font-size: 3em;
+}
+
+h2 {
+    font-family: "Oswald", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
 }
 
 hr {
@@ -125,6 +137,41 @@ hr {
 
 /* FOOTER */
 
+/*      
+#E691B9 (rosa fondo)
+#FFC5D1 (fuente y fondo iconos)
+Fuente headings e iconos = rojo fondo main
+*/
+
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #E691B9;
+    padding: 1rem 0 1em 0;
+}
+
+#footer-main {
+    display: flex;
+    justify-content: center;
+}
+
+#contacto a {
+    text-decoration: underline;
+    text-decoration-thickness: 1px;
+}
+
+#privacidad {
+    text-align: center;
+    font-family: "Oswald", sans-serif;
+    font-weight: 400;
+}
+
+#privacidad>span {
+    font-weight: 300;
+}
+
+/*
 footer {
     display: flex;
     flex-direction: column;
@@ -141,11 +188,13 @@ footer {
     justify-content: center;
 }
 
-#redes, #contacto {
+#redes,
+#contacto {
     margin: 0 3rem 3rem;
 }
 
-#redes>*, #contacto>* {
+#redes>*,
+#contacto>* {
     margin-top: 0.5em;
 }
 
@@ -156,9 +205,15 @@ footer {
     font-size: small;
 }
 
-#privacidad>a {
+#privacidad>* {
     text-decoration: none;
-    margin: 0 1.5em 0 1.5em;
+    margin: 5px 1.5em 0 1.5em;
+    font-family: "Oswald", sans-serif;
+    font-weight: 400;
+}
+
+#privacidad>span {
+    font-weight: 300;
 }
 
 #iconos {
@@ -171,9 +226,9 @@ footer {
     align-items: center;
     justify-content: center;
     border-radius: 50%;
-    margin: 0 2px 2px;
+    margin: 0 5px 0 5px;
     height: 25px;
     width: 25px;
     background-color: #F5D0DE;
     color: #610C3F;
-}
+}*/
