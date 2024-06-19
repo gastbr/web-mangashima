@@ -149,6 +149,7 @@ footer {
     align-items: center;
     background-color: #E691B9;
     padding: 1rem 0 1em 0;
+    height: ;
 }
 
 #footer-main {
@@ -165,6 +166,7 @@ footer {
     text-align: center;
     font-family: "Oswald", sans-serif;
     font-weight: 400;
+    font-size: .7em;
 }
 
 #privacidad>span {
